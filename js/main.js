@@ -131,7 +131,7 @@ function displayDetails(meal) {
       <h3>${meal.strMeal}<h2>
       <p class="lead">${meal.strInstructions
         .split(" ")
-        .slice(0, 20)
+        .slice(0, 40)
         .join(" ")}</p>
         <div class="mt-5">
           <button class="btn btn-danger"><a target="_blank" href="${

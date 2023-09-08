@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <title>Yummy</title>
+  </head>
+  <body>
+    <!-- start navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand fw-bold fs-3 text-uppercase"
+          href="#"
+          onclick="getAllCategories()"
+          >Meals</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars-staggered fs-3 text-warning"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+                onclick="getAllCategories()"
+                >category</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="getAreas()">area</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="getAllIngrediant()"
+                >ingrediants</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">contact us</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fa-solid fa-globe text-white"></i
+                ><i class="fa-solid fa-share-nodes text-white mx-2"></i
+              ></a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-1"
+              type="search"
+              id="name"
+              placeholder="Search By Name"
+              aria-label="Search by Name"
+            />
+            <input
+              class="form-control me-1"
+              type="search"
+              id="letter"
+              placeholder="Search By First Letter"
+              aria-label="Search by First Letter"
+              maxlength="1"
+            />
+            <img src="images/logo.png" class="logo" alt="" />
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- end navbar -->
+
+    <!-- start content -->
+
+    <div id="content" class="content my-5 py-5 d-flex">
+      <div class="container">
+        <div id="myRow" class="row g-3"></div>
+      </div>
+    </div>
+
+    <!-- end content -->
+
+    <!-- start loading -->
+    <div
+      id="parent"
+      class="position-absolute start-0 end-0 top-0 bottom-0 w-100 h-100 d-flex justify-content-center align-items-center bg-dark d-none"
+    >
+      <span id="loader" class="loader d-none"></span>
+    </div>
+    <!-- end loading -->
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

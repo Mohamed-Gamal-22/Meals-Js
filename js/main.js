@@ -35,7 +35,7 @@ function displayCategory(categories) {
     <div class="col-lg-3 col-md-6" onclick="getMeals('${
       category.strCategory
     }')">
-        <div class="item position-relative overflow-hidden rounded bg-dark p-1">
+        <div class="item animate__fadeIn animate__animated position-relative overflow-hidden rounded bg-dark p-1">
             <img src="${category.strCategoryThumb}" class="w-100 " alt="meal" />
             <div
             class="layer position-absolute d-flex justify-content-center align-items-center flex-column"
@@ -70,7 +70,7 @@ function displayMeals(meals) {
 
   meals.forEach((meal) => {
     cartona += `
-      <div class="col-lg-3 col-md-6" onclick="mealDetails('${meal.idMeal}')">
+      <div class="col-lg-3 col-md-6 " onclick="mealDetails('${meal.idMeal}')">
           <div class="item position-relative overflow-hidden rounded bg-dark p-1">
               <img src="${meal.strMealThumb}" class="w-100 " alt="meal" />
               <div
